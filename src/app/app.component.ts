@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practice';
+
+    items = ['item1', 'item2', 'item3', 'item4'];
+  
+    addItem(newItem: string) {
+      this.items.push(newItem);
+    
+  }
+  currentItem = 'Television';
+// parentTitle='hello';
+
 }
+// console.log("this is "+parentTitle)
